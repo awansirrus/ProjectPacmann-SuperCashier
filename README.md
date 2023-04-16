@@ -1,2 +1,62 @@
 # ProjectPacmann-SuperCashier
-Project ini dibuat sebagai salah satu tugas dari Pacmann
+SuperCashier adalah program self-service cashier supermarket sederhana yang memungkinkan costumer menginputkan item, jumlah dan harga yang ingin dibeli.
+
+# Background
+Seorang pemilik supermarket di suatu kota ingin melakukan perbaikan proses bisnis dengan cara membuat self-service kasir. Jadi, customer dapat membeli barang dari supermarket secara langsung mulai dari menginputkan pesanannya, memasukkan jumlah item, dan memasukkan harga belanjaannya. Jadi supermarket tersebut dapat menjangkau pasar yang lebih luas karena customer di luar kota tersebut dapat membeli barang-barang dari supermarketnya.
+
+# Feature Requirements
+1. Customer dapat menginput id-nya
+2. Customer dapt menginput nama item, jumlah item, dan harga item
+3. Jika ada kesalahan input, maka customer dapat:
+    a. Update nama item
+    b. Update jumlah item
+    c. Update harga item
+4. Jika batal item belanjaan, maka customer:
+    a. Hapus salah satu item
+    b. Langsung hapus transaksi/reset transaksi
+5. Jika sudah selesai, customer mengecek list belanja
+6. Pembeli mengecek total harga
+
+# Flowcharts
+<img width="545" alt="flowchart" src="https://user-images.githubusercontent.com/130228426/232286078-2fa13fc6-d816-4917-b2ca-b28e82a6ec97.png">
+
+# Penjelasan Fungsi
+SuperCashier terdiri dari dua file program, main.py dan SuperCashier.py. File main.py merupakan file utama yang dijalankan oleh user. Disini user dapat memasukkan user id nya.
+
+![gambar](https://user-images.githubusercontent.com/130228426/232287189-b6ddf243-39c1-4111-a6e6-6c7791fc25b0.png)
+
+Sedangkan SuperCashier.py berisi modul Transaction yang di-import oleh file main.py. Pada file SuperCashier.py terdapat beberapa method, diantaranya adalah:
+1. Class Transaction
+
+
+   ![gambar](https://user-images.githubusercontent.com/130228426/232287634-4915e712-70da-4c75-a14b-41d0a81f606a.png)
+
+
+2. add_item()
+
+    ![gambar](https://user-images.githubusercontent.com/130228426/232287861-ef197f33-28d4-465f-87a2-2f014cef6b4e.png)
+
+3. delete_item()
+
+    ![gambar](https://user-images.githubusercontent.com/130228426/232288097-851dc5d1-e0ae-4825-a463-f8b261f37841.png)
+
+4. update_item_name() , update_item_qty() , update_item_price()
+
+    ![gambar](https://user-images.githubusercontent.com/130228426/232288293-4e5a83eb-dd0c-441b-ad2a-a05669329fee.png)
+
+5. check_order()
+
+   ![gambar](https://user-images.githubusercontent.com/130228426/232288426-c777d69d-33e2-48c8-94ab-f84206dfcf16.png)
+
+6. total_price(). Memiliki fungsi untuk menghitung total belanjaan pelanggan beserta dengan diskonnya. Diskon yang diperoleh pelanggan akan mengikuti            ketentuan sebagai berikut. Jika total belanja diatas Rp 200.000 maka akan mendapatkan diskon 5%. Jika total belanja diatas Rp 300.000 maka akan            mendapatkan diskon 8%. Jika total belanja diatas Rp 500.000 maka akan mendapatkan diskon 10%
+
+   ![gambar](https://user-images.githubusercontent.com/130228426/232288890-6751e592-6aa5-4eb7-a343-390f107d3fbb.png)
+
+7. reset_transaction()
+
+   ![gambar](https://user-images.githubusercontent.com/130228426/232288985-3b0ec37d-6e9e-4556-bc07-27703adec5a9.png)
+
+
+# Test Case
+
+
